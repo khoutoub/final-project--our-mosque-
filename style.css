@@ -1,0 +1,124 @@
+/* Reset some basic elements for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-bottom: 60px; /* Pushes the footer down */
+}
+
+header {
+    background: #006a4e; /* A deep green color */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    max-height: 80px; /* Adjust the logo size */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #034732; /* A darker shade of the header background for hover and active state */
+}
+
+main {
+    padding: 20px;
+    min-height: 400px; /* Gives the main content area a minimum height */
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+/* Styling for various sections in main */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #006a4e;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #034732;
+}
+
+footer {
+    background: #006a4e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive layout for smaller screens */
+@media only screen and (max-width: 600px) {
+    header, nav ul li, main, footer {
+        text-align: center;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+}
