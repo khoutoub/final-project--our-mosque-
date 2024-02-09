@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Sahaba Mosque</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -19,48 +19,63 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="content-section">
-            <h1>Contact Halal Mosque</h1>
-            <p>We are here to answer any questions you may have about our services and community work. Reach out to us and we will respond as soon as we can.</p>
-            
-            <div class="contact-methods">
-                <h2>Email Us</h2>
-                <p><a href="mailto:contact@sahabamosque.org">contact@sahabamosque.org</a></p>
-                
-                <h2>Visit Us</h2>
-                <address>
-                    123 Faith Road<br>
-                    Spirituality City, SC 12345
-                </address>
-                
-                <h2>Call Us</h2>
-                <p>+1 (123) 456-7890</p>
-                
-                <h2>Follow Us</h2>
-                <p>Stay updated with our latest news and events on social media:</p>
-                <ul>
-                    <li><a href="https://www.facebook.com/sahabamosque">Facebook</a></li>
-                    <li><a href="https://www.twitter.com/sahabamosque">Twitter</a></li>
-                    <li><a href="https://www.instagram.com/sahabamosque">Instagram</a></li>
-                </ul>
-            </div>
-            
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="your-server-side-script" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <button type="submit" class="button">Send</button>
-                </form>
-            </div>
+        <h1>Contact Sahaba Mosque</h1>
+        <p>If you have any questions or need further information, please feel free to contact us through the following ways:</p>
+
+        <section>
+            <h2>Email Us</h2>
+            <p>For general inquiries: <a href="mailto:info@sahabamosque.com">info@sahabamosque.com</a></p>
+            <p>For event bookings: <a href="mailto:events@sahabamosque.com">events@sahabamosque.com</a></p>
+        </section>
+
+        <section>
+            <h2>Visit or Mail Us</h2>
+            <address>
+                Sahaba Mosque<br>
+                123 Peace Street<br>
+                Faithful City, FC 12345
+            </address>
+        </section>
+
+        <section>
+            <h2>Call Us</h2>
+            <p>Main Office: +123 456 7890</p>
+            <p>Community Services: +123 456 7891</p>
+        </section>
+
+        <section>
+            <h2>Connect With Us</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/sahabamosque">Facebook</a></li>
+                <li><a href="https://www.twitter.com/sahabamosque">Twitter</a></li>
+                <li><a href="https://www.instagram.com/sahabamosque">Instagram</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Find Us</h2>
+            <p>Use the map below to find our location:</p>
+            <!-- Embed a Google Maps iframe here. Replace with your mosque's location. -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="your-server-side-script" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
         </section>
     </main>
 

@@ -1,72 +1,156 @@
-/* ...other styles... */
-
-/* General page styles for consistency */
-main {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for the content */
+/* Reset some basic elements for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Section styles for consistency */
-section {
-    background-color: #fff; /* White background for content sections */
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #006a4e;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #034732;
+}
+
+main {
+    clear: both;
+    padding: 20px;
+    min-height: calc(100% - (80px + 60px)); /* Header height + footer height */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #006a4e;
+}
+
+.content-section {
+    background: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners for the section boxes */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-    color: #333; /* Primary text color */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Typography for consistency */
-h1, h2 {
-    color: #006a4e; /* Dark green color for headings */
-}
-
-/* List styles for consistency */
 ul {
-    list-style-type: none; /* No bullets for lists */
-    padding-left: 0; /* Align list content with other texts */
-    line-height: 1.6; /* Spacing between lines */
+    padding-left: 20px;
 }
 
 ul li {
-    padding: 5px 0; /* Spacing between list items */
+    line-height: 1.6;
 }
 
-/* Link styles for consistency */
-a {
-    color: #006a4e; /* Links are the same dark green for visibility */
-    text-decoration: none; /* No underline for a clean look */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover for clarity */
-}
-
-/* Button styles for consistency */
-.button {
-    background-color: #006a4e; /* Dark green background for buttons */
-    color: #fff;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: #034732; /* Slightly darker green on hover */
-}
-
-/* Footer styles for consistency */
 footer {
-    background-color: #006a4e; /* Dark green background for footer */
+    background: #006a4e;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative; /* Changed from fixed to allow for variable content height */
+    position: relative;
     bottom: 0;
     width: 100%;
 }
 
-/* ...media queries... */
+.button {
+    display: inline-block;
+    background-color: #006a4e;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #034732;
+}
+
+/* Embedded iframe styles */
+iframe {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background: #006a4e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background: #034732;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    header img {
+        height: 60px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .content-section {
+        padding: 15px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form button[type="submit"] {
+        width: auto;
+        display: block;
+    }
+}
