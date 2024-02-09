@@ -8,13 +8,18 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
     color: #333;
     padding-bottom: 60px; /* Pushes the footer down */
+    background: url('assets/images/mosque-background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
-    background: #006a4e; /* A deep green color */
+    background: rgba(0, 106, 78, 0.8); /* A deep green color with transparency */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -54,6 +59,7 @@ nav ul li a.active {
 main {
     padding: 20px;
     min-height: 400px; /* Gives the main content area a minimum height */
+    background: rgba(255, 255, 255, 0.8); /* Light background for content to enhance readability */
 }
 
 main h1 {
@@ -94,7 +100,7 @@ form button:hover {
 }
 
 footer {
-    background: #006a4e;
+    background: rgba(0, 106, 78, 0.8);
     color: #fff;
     text-align: center;
     padding: 20px 0;
