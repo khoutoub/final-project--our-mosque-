@@ -1,130 +1,72 @@
-/* Reset some basic elements for consistency */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ...other styles... */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    padding-bottom: 60px; /* Pushes the footer down */
-    background: url('assets/images/mosque-background.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-header {
-    background: rgba(0, 106, 78, 0.8); /* A deep green color with transparency */
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header img {
-    max-height: 80px; /* Adjust the logo size */
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    background-color: #034732; /* A darker shade of the header background for hover and active state */
-}
-
+/* General page styles for consistency */
 main {
     padding: 20px;
-    min-height: 400px; /* Gives the main content area a minimum height */
-    background: rgba(255, 255, 255, 0.8); /* Light background for content to enhance readability */
+    background-color: #f9f9f9; /* Light background for the content */
 }
 
-main h1 {
-    margin-bottom: 20px;
-}
-
-main p {
-    margin-bottom: 10px;
-}
-
-/* Styling for various sections in main */
+/* Section styles for consistency */
 section {
-    margin-bottom: 20px;
+    background-color: #fff; /* White background for content sections */
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for the section boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    color: #333; /* Primary text color */
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
+/* Typography for consistency */
+h1, h2 {
+    color: #006a4e; /* Dark green color for headings */
 }
 
-form button {
-    padding: 10px 20px;
-    background: #006a4e;
+/* List styles for consistency */
+ul {
+    list-style-type: none; /* No bullets for lists */
+    padding-left: 0; /* Align list content with other texts */
+    line-height: 1.6; /* Spacing between lines */
+}
+
+ul li {
+    padding: 5px 0; /* Spacing between list items */
+}
+
+/* Link styles for consistency */
+a {
+    color: #006a4e; /* Links are the same dark green for visibility */
+    text-decoration: none; /* No underline for a clean look */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Button styles for consistency */
+.button {
+    background-color: #006a4e; /* Dark green background for buttons */
     color: #fff;
-    border: 0;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
     cursor: pointer;
 }
 
-form button:hover {
-    background: #034732;
+.button:hover {
+    background-color: #034732; /* Slightly darker green on hover */
 }
 
+/* Footer styles for consistency */
 footer {
-    background: rgba(0, 106, 78, 0.8);
+    background-color: #006a4e; /* Dark green background for footer */
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
+    position: relative; /* Changed from fixed to allow for variable content height */
     bottom: 0;
     width: 100%;
 }
 
-/* Responsive layout for smaller screens */
-@media only screen and (max-width: 600px) {
-    header, nav ul li, main, footer {
-        text-align: center;
-    }
-
-    nav ul {
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    nav ul li a {
-        display: block;
-    }
-}
+/* ...media queries... */
