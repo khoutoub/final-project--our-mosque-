@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="contact.jpg" alt="Sahaba Mosque Logo">
+        <img src="logo.jpg" alt="Sahaba Mosque Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,61 +21,32 @@
     </header>
 
     <main>
-        <h1>Contact Sahaba Mosque</h1>
-        <p>If you have any questions or need further information, please feel free to contact us through the following ways:</p>
+        <section class="content-section">
+            <h1>Contact Sahaba Mosque</h1>
+            <div class="contact-methods">
+                <h2>Visit or Mail Us</h2>
+                <address>
+                    Sahaba Mosque<br>
+                    711 High School Rd,<br>
+                    Indianapolis, IN 46241
+                </address>
+            </div>
 
-        <section>
-            <h2>Email Us</h2>
-            <p>For general inquiries: <a href="mailto:info@sahabamosque.com">info@sahabamosque.com</a></p>
-            <p>For event bookings: <a href="mailto:events@sahabamosque.com">events@sahabamosque.com</a></p>
-        </section>
+            <div class="map-container">
+                <h2>Find Us on the Map</h2>
+                <!-- Embed Google Maps iframe -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12349.036659522174!2d-86.2509653!3d39.7237556!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b5d5c7de73a8f%3A0x768f3fdb7efa9f3b!2s711%20High%20School%20Rd%2C%20Indianapolis%2C%20IN%2046241%2C%20USA!5e0!3m2!1sen!2s!4v1665585764986!5m2!1sen!2s"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
-        <section>
-            <h2>Visit or Mail Us</h2>
-            <address>
-                Sahaba Mosque<br>
-                123 Peace Street<br>
-                Faithful City, FC 12345
-            </address>
-        </section>
-
-        <section>
-            <h2>Call Us</h2>
-            <p>Main Office: +123 456 7890</p>
-            <p>Community Services: +123 456 7891</p>
-        </section>
-
-        <section>
-            <h2>Connect With Us</h2>
-            <ul>
-                <li><a href="https://www.facebook.com/sahabamosque">Facebook</a></li>
-                <li><a href="https://www.twitter.com/sahabamosque">Twitter</a></li>
-                <li><a href="https://www.instagram.com/sahabamosque">Instagram</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Find Us</h2>
-            <p>Use the map below to find our location:</p>
-            <!-- Embed a Google Maps iframe here. Replace with your mosque's location. -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy">
-            </iframe>
-        </section>
-
-        <section>
-            <h2>Send Us a Message</h2>
-            <form action="your-server-side-script" method="POST">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="button">Send Message</button>
-            </form>
+            <!-- Additional contact details like phone, email, social media links, and a contact form -->
         </section>
     </main>
 
