@@ -1,4 +1,4 @@
-/* Basic Reset */
+//* Basic Reset */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body, html {
 
 /* Header */
 header {
-    background-color: #00796b; /* A richer shade of green */
+    background-color: #00796b; /* Consistent green shade */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -45,7 +45,7 @@ nav ul li a {
 
 nav ul li a:hover, 
 nav ul li a.active {
-    background-color: #004d40; /* A darker green for hover/active */
+    background-color: #004d40; /* A darker green for hover/active states */
 }
 
 /* Main Content */
@@ -58,52 +58,31 @@ h1, h2, h3, h4, h5, h6 {
     color: #00574b; /* Darker green for headings */
 }
 
-p {
+p, ul {
     margin-bottom: 1rem;
 }
 
 /* Sections */
-section {
+section.content-section {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-aligns text and other inline elements */
 }
 
-/* Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-table, th, td {
-    border: 1px solid #dddddd;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #00796b; /* Matching header color */
-    color: white;
-}
-
-/* Blockquote Styling for Weekly Thought */
-blockquote {
-    font-style: italic;
-    background: #e0f2f1; /* Light green background */
-    border-left: 10px solid #00796b;
-    margin: 20px 0;
-    padding: 10px 20px;
+/* Image Styling */
+section.content-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px; /* Centers image and adds space below */
+    display: block; /* Makes the image block-level for margin to take effect */
 }
 
 /* Footer */
 footer {
-    background-color: #00796b; /* Matching the header */
+    background-color: #00796b;
     color: white;
     text-align: center;
     padding: 20px 0;
