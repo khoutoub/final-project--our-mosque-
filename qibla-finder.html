@@ -3,35 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qibla Finder - SAHABA Mosque</title>
+    <title>Qibla Finder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.jpg" alt="Sahaba Mosque Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="services.html">Community Services</a></li>
-                <li><a href="educational-programs.html">Educational Programs</a></li>
-                <li><a href="qibla-finder.html" class="active">Qibla Finder</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="qibla-finder">
-            <h2>Qibla Finder</h2>
-            <p>Click the button to find the Qibla direction from your current location.</p>
-            <button onclick="findQiblaDirection()">Find Qibla Direction</button>
-            <p id="qibla-direction">Qibla direction will be shown here.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Sahaba Mosque. All rights reserved.</p>
-    </footer>
+    <div id="qibla-direction-container">
+        <div id="qibla-pointer"></div>
+    </div>
     <script src="qiblaFinder.js"></script>
 </body>
 </html>
